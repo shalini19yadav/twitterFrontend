@@ -65,7 +65,7 @@ const Home = () => {
   //       file:reader.result
   //     }
   //     console.log(obj)
-  //     let res= await axios.post('http://localhost:8080/posts/create',obj,{
+  //     let res= await axios.post('https://twitterbackend-3w1y.onrender.com/posts/create',obj,{
   //       headers:{
   //         'Authorization':ctx.details.token
   //       }
