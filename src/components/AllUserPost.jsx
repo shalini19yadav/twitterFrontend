@@ -121,7 +121,7 @@ const handleLikes=async(postId)=>{
             {
                 allPosts.map((ele) => {
 
-                    return  <Card key={ele._id} sx={{ maxWidth: 345 }}>
+                    return  <Card key={ele._id} sx={{ maxWidth: 345, bgcolor:pink[50] }}>
                     <CardHeader
                       avatar={
                         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

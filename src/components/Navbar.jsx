@@ -114,7 +114,7 @@ let navigate=useNavigate();
     >
      { login===true && <MenuItem onClick={handleMenuClose}><Link  style={{textDecoration:"none",color:"black"}} 
      to='/user/profile'  >Profile</Link></MenuItem>}
-     { login===true && <MenuItem onClick={handleMenuClose}>My account</MenuItem>}
+     {/* { login===true && <MenuItem onClick={handleMenuClose}>My account</MenuItem>} */}
       { login===false && <MenuItem ><Link to={'/login'} style={{textDecoration:"none",color:"black"}}>Login</Link></MenuItem>  }
       { login===false && <MenuItem ><Link to={'/signup'} style={{textDecoration:"none",color:"black"}}>Signup</Link></MenuItem>}
       {login===true && <MenuItem onClick={handleLogout}>Logout</MenuItem>}
@@ -138,15 +138,15 @@ let navigate=useNavigate();
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
+      {/* <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
             <MailIcon />
           </Badge>
         </IconButton>
         <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
+      </MenuItem> */}
+      {/* <MenuItem>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
@@ -157,18 +157,42 @@ let navigate=useNavigate();
           </Badge>
         </IconButton>
         <p>Notifications</p>
-      </MenuItem>
+      </MenuItem> */}
+      {/* <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ display: { xs: 'none', sm: 'block' } }}
+          > */}
+           <MenuItem>
+            <IconButton    size="small"
+          aria-label="account of current user"
+          aria-controls="primary-search-account-menu"
+          aria-haspopup="true"
+          color="inherit">
+             <Link style={{textDecoration:"none",color:"black"}} to={'/'} >TwitterApp</Link>
+          {/* </Typography> */} </IconButton></MenuItem>
+          <MenuItem>
+      <IconButton    size="small"
+          aria-label="account of current user"
+          aria-controls="primary-search-account-menu"
+          aria-haspopup="true"
+          color="inherit">
+              
+           { login===true && <Link style={{textDecoration:"none",color:"black" }} to={'/yourblogs'} >YourBlogs</Link>}
+            </IconButton> </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
-          size="large"
+          size="small"
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle />
+          {/* <AccountCircle /> */}
+          <p>Profile</p>
         </IconButton>
-        <p>Profile</p>
+       
       </MenuItem>
     </Menu>
   );
@@ -177,7 +201,7 @@ let navigate=useNavigate();
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -185,7 +209,7 @@ let navigate=useNavigate();
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h6"
             noWrap
@@ -194,7 +218,7 @@ let navigate=useNavigate();
           >
              <Link style={{textDecoration:"none",color:"white"}} to={'/'} >TwitterApp</Link>
           </Typography>
-          <Search>
+          {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -202,7 +226,7 @@ let navigate=useNavigate();
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="small" aria-label="show 4 new mails" color="inherit">
@@ -211,7 +235,7 @@ let navigate=useNavigate();
               </Badge> */}
            { login===true && <Link style={{textDecoration:"none",color:"white"}} to={'/yourblogs'} >yourBlogs</Link>}
             </IconButton>
-          { login===true && <IconButton
+          {/* { login===true && <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
@@ -219,7 +243,7 @@ let navigate=useNavigate();
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton>}
+            </IconButton>} */}
             <IconButton
               size="large"
               edge="end"

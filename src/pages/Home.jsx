@@ -83,7 +83,7 @@ const Home = () => {
 
 
   return (
-    <div className='row m-0 p-0 bg-warning mt-2'>
+    <div className='row m-0 p-0 mt-2'>
       <div className='col-1'>
         <button onClick={()=>setclicked(true)} className='btn btn-info'> create</button>
       </div>
@@ -97,7 +97,7 @@ const Home = () => {
 
         <form>
           <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
+            <label htmlFor="exampleInputEmail1" className=" form-label">Title</label>
             <input ref={titleRef} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
           </div>
 

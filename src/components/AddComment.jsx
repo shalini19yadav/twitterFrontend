@@ -62,8 +62,8 @@ const AddComment = (props) => {
                             <MDBCard className="shadow-0 border" style={{ backgroundColor: "#f0f2f5" }}>
                                 <MDBCardBody>
                                     <div className='d-flex gap-1 mb-4 '>
-                                        <MDBInput ref={commentRef} placeholder="add comment..." label="+ Add a comment..." />
-                                        <button className='btn btn-success' onClick={() => submitCommentHandler(props.ele._id)}>send</button>
+                                        <MDBInput ref={commentRef}   placeholder="add comment..." />
+                                        <button className='btn btn-success ' onClick={() => submitCommentHandler(props.ele._id)}>send</button>
                                     </div>
 
                                     {
